@@ -1,0 +1,43 @@
+Arguments: 
+  /usr/bin/node /home/shashank/.npm-global/bin/yarn add cuncurrently
+
+PATH: 
+  /home/shashank/.npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  8.10.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/cuncurrently: Not found
+      at Request.params.callback [as _callback] (/home/shashank/.npm-global/lib/node_modules/yarn/lib/cli.js:65894:18)
+      at Request.self.callback (/home/shashank/.npm-global/lib/node_modules/yarn/lib/cli.js:129018:22)
+      at emitTwo (events.js:126:13)
+      at Request.emit (events.js:214:7)
+      at Request.<anonymous> (/home/shashank/.npm-global/lib/node_modules/yarn/lib/cli.js:129990:10)
+      at emitOne (events.js:116:13)
+      at Request.emit (events.js:211:7)
+      at IncomingMessage.<anonymous> (/home/shashank/.npm-global/lib/node_modules/yarn/lib/cli.js:129912:12)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:111:20)
+
+npm manifest: 
+  {
+    "name": "imgurrr",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://shashank8907@github.com/shashank8907/imgurrr.git",
+    "author": "shashank8907 <shashank8907@hotmail.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
