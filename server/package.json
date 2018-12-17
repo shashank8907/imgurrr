@@ -1,0 +1,32 @@
+{
+  "name": "react-nodejs",
+  "version": "1.0.0",
+  "description": "Boilerplate for react and nodejs(express)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "engines": {
+    "node": "8.10.0",
+    "npm": "6.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashank8907/react-nodejs.git"
+  },
+  "author": "Shashank",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shashank8907/react-nodejs/issues"
+  },
+  "homepage": "https://github.com/shashank8907/react-nodejs#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.8"
+  }
+}
