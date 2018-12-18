@@ -1,24 +1,29 @@
 import React, { Component } from 'react';
 import './App.css';
+import ImageCard from './Components/ImageCard';
+import Header from './Components/header';
+import { BrowserRouter as Router, Route} from "react-router-dom";
 
 class App extends Component {
-
-  state = {cities: []}
-  async componentDidMount() {
-    const response = await fetch('/cities')
-    const cities   = await response.json()
-    this.setState({cities: cities})
+  constructor() {
+    super();
+    this.state = {
+      movies: ["Ironman", "SuperMan", "Black panther", "Avengers", "Hulk", "Thor","Ironman", "SuperMan", "Black panther", "Avengers", "Hulk", "Thor"]
+    }
   }
+  
 
   render() {
     return (
-      <div>
-        <ul>
-          {this.state.cities.map( city => {
-            return <li key={city.name}> <b>{city.name}</b>: {city.population}</li>
-          })}
-        </ul>
-      </div>
+        <div>
+        <Header/>       
+          {this.state.movies.map((movie, key) => {
+          return (<ImageCard name={movie}/>)
+                 })
+              }
+       </div >
+    
+    
     );
   }
 }
