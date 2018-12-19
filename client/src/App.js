@@ -13,6 +13,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <h1>Hello cities</h1>
         <ul>
           {this.state.cities.map( city => {
             return <li key={city.name}> <b>{city.name}</b>: {city.population}</li>
